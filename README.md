@@ -1,2 +1,2 @@
 # send-sms-message
-Send a SMS message from AWS Lambda with python.
+Send a SMS message from AWS Lambda with python and Twilio.
