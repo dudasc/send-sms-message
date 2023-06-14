@@ -1,7 +1,9 @@
 from src.service import Service
 
 def lambda_handler(event, context):
-  service = Service()  
+  service = Service()
+  
+  print("Test function...")
   
   return service.run()
  
