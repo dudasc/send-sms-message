@@ -3,4 +3,4 @@ phases:
   build:
     commands:
       - curl https://install.python-poetry.org | python -
-      - pip3.9 install -r requirements.txt --target .
+      - pip3 install -r requirements.txt --target .
