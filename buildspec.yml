@@ -4,3 +4,6 @@ phases:
     commands:
       - curl https://install.python-poetry.org | python -
       - pip3 install -r requirements.txt --target .
+    artifacts:
+      files:
+        ./*
