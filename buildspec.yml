@@ -2,6 +2,4 @@ version: 0.2
 phases:
   build:
     commands:
-      - curl https://install.python-poetry.org | python -
       - pip3 install -r requirements.txt --target .
-      - aws lambda update-function-code --function-name lambda-send-sms-message --s3-bucket lambda-send-sms-message --s3-key app.zip
