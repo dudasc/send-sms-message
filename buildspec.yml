@@ -4,7 +4,7 @@ phases:
     commands:
       - curl https://install.python-poetry.org | python -
       - pip3.9 install -r requirements.txt --target .
-  artifacts:
-    type: zip
-    files:
-      - '**/*'
+artifacts:
+  type: zip
+  files:
+    - '**/*'
