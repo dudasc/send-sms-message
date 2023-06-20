@@ -4,6 +4,9 @@ phases:
     commands:
       - curl https://install.python-poetry.org | python -
       - pip3 install -r requirements.txt --target .
+  post_build:
+    commands:
+      - aws lambda update-function-code --function-name lambda-send-sms-message --s3-bucket lambda-send-sms-message --s3-key app.zip"
 artifacts:
   type: zip
   files:
